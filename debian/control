@@ -13,7 +13,7 @@ Build-Depends-Indep:
  python-pbr (>= 0.6),
  python-setuptools,
  python-sphinx
-Standards-Version: 3.9.3
+Standards-Version: 3.9.6
 XS-Python-Version: >= 2.7
 
 Package: python-keystone-voms
