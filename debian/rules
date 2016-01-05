@@ -31,6 +31,9 @@ override_dh_clean:
 	rm -rf $(CURDIR)/doc/build
 	dh_clean
 
+override_dh_python2:
+	dh_python2 --no-guessing-deps
+	
 get-orig-source:
 	uscan --verbose --force-download --rename --destdir=../build-area
 
