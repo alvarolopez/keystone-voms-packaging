@@ -1,3 +1,15 @@
+python-keystone-voms (8.0.0-1) stable; urgency=medium
+
+  [ Enol Fernandez ]
+  * [8ca947e] Filter out multiple tenants when using a VOMS proxy
+
+  [ Alvaro Lopez Garcia ]
+  * [57259e4] travis: use stable/liberty for testing
+  * [71350f4] doc: general improvements
+  * [f56e570] doc: homogenize apt-get and aptitude usage
+
+ -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Tue, 05 Jan 2016 12:31:48 +0100
+
 python-keystone-voms (2015.1-1) stable; urgency=medium
 
   [ Enol Fernandez ]
