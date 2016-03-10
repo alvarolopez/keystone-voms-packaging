@@ -1,3 +1,32 @@
+python-keystone-voms (8.0.1-1) stable; urgency=medium
+
+  [ Alvaro Lopez Garcia ]
+  * [b22eeb5] pep8: fix H307, import errors
+  * [18ed4a6] pep8: fix H40X docstring errors
+  * [c201b92] pep8: fix whitespace
+  * [2d3c6f1] move tests inside keystone directory
+  * [da85d22] catch Exception, not everything
+  * [a7f245b] remove unecessary comment
+  * [afb650e] remove old commented code
+  * [c246cd8] Py3: do not use "basestring"
+  * [ade9435] Fix long and int usage in Py2 and Py3
+  * [d6981c3] pep8: do not use multiple positional placeholders
+  * [10921bb] adjust requirements for testing
+  * [4e9bcbf] tests: use our own paths
+  * [3253bf8] tests: do not rename the core module to ks_voms
+  * [dbbfcc7] tests: fix paths of config file
+  * [e4cdad9] tests: fix old fake_context
+  * [9660a28] tests: fix VO filtering tests
+  * [3650ba5] travis: modify configuration
+  * [27e864c] doc: update testing readme
+
+  [ Enol Fernandez ]
+  * [c3fb3e0] Add missing packages and versions to requirements
+  * [e66b44a] Update oslo.config import
+  * [50a4ec4] Update docs to Liberty
+
+ -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Thu, 10 Mar 2016 11:49:00 +0100
+
 python-keystone-voms (8.0.0-1) stable; urgency=medium
 
   [ Enol Fernandez ]
