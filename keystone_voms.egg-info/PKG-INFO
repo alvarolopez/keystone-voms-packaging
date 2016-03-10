@@ -1,14 +1,14 @@
 Metadata-Version: 1.1
 Name: keystone-voms
-Version: 8.0.0
+Version: 8.0.1
 Summary: Keystone VOMS module for Keystone.
 Home-page: http://ifca.github.io/keystone-voms
 Author: Spanish National Research Council (CSIC)
 Author-email: aloga@ifca.unican.es
 License: Apache-2
-Description: # Keystone VOMS auth module [![Build Status](https://travis-ci.org/IFCA/keystone-voms.png?branch=stable/icehouse)](https://travis-ci.org/IFCA/keystone-voms)
+Description: # Keystone VOMS auth module [![Build Status](https://travis-ci.org/IFCA/keystone-voms.png?branch=stable/liberty)](https://travis-ci.org/IFCA/keystone-voms)
         
-        This module is intended to provide VOMS authentication to a Grizzly
+        This module is intended to provide VOMS authentication to a Liberty
         OpenStack Keystone. It is designed to be integrated as an external
         authentication plugin, so that Keystone will preserve its original
         features and users will still be able to authenticate using any of the

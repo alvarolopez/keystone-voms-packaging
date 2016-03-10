@@ -1,4 +1,5 @@
 .gbp.conf
+.testr.conf
 .travis.yml
 AUTHORS
 ChangeLog
@@ -9,6 +10,7 @@ requirements.txt
 setup.cfg
 setup.py
 test-requirements.txt
+tox.ini
 doc/Makefile
 doc/source/conf.py
 doc/source/configuration.rst
@@ -24,6 +26,7 @@ etc/voms.json
 keystone_voms/__init__.py
 keystone_voms/core.py
 keystone_voms/exception.py
+keystone_voms/test.py
 keystone_voms/version.py
 keystone_voms/voms_helper.py
 keystone_voms.egg-info/PKG-INFO
@@ -34,9 +37,10 @@ keystone_voms.egg-info/not-zip-safe
 keystone_voms.egg-info/pbr.json
 keystone_voms.egg-info/requires.txt
 keystone_voms.egg-info/top_level.txt
-tests/test_middleware_voms_authn.py
-tests/voms_multiple_vos.json
-tests/config_files/keystone_voms.conf
-tests/config_files/voms.json
-tests/config_files/voms_no_tenant.json
-tests/config_files/voms_no_vo.json
+keystone_voms/tests/__init__.py
+keystone_voms/tests/test_middleware_voms_authn.py
+keystone_voms/tests/config_files/keystone_voms.conf
+keystone_voms/tests/config_files/voms.json
+keystone_voms/tests/config_files/voms_multiple_vos.json
+keystone_voms/tests/config_files/voms_no_tenant.json
+keystone_voms/tests/config_files/voms_no_vo.json
