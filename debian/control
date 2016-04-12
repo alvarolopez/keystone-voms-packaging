@@ -22,10 +22,11 @@ Section: python
 Depends: ${python:Depends}, ${misc:Depends},
  libvomsapi1,
  python-m2crypto,
- python-keystone (>= 8.0.0),
- python-keystone (<< 9.0.0),
- keystone (>= 8.0.0), 
- keystone (<< 9.0.0)
+ python-keystone (>= 2:8.0.0),
+ python-keystone (<< 2:9.0.0),
+ keystone (>= 2:8.0.0), 
+ keystone (<< 2:9.0.0)
+Replaces: python-keystone-voms (= 8.0.0)
 Suggests: voms-clients
 Provides: ${python:Provides}
 XS-Python-Version: ${python:Versions}
