@@ -1,3 +1,0 @@
-[paste.filter_factory]
-voms_filter = keystone_voms.core:VomsAuthNMiddleware.factory
-
