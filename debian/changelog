@@ -1,3 +1,19 @@
+python-keystone-voms (9.0.0-1) stable; urgency=medium
+
+  [ Alvaro Lopez Garcia ]
+  * docs improvements
+  * [ce29ad8] add keystone VOMS base exception
+  * [2fa5355] Refactor VOMS support with pyOpenSSL (Closes: #32)
+  * [1e79236] Use the new VOMS class and drop old voms_helper module
+  * [5e22800] Defer JSON loading until it is needed
+  * [0bb2535] remove unused attribute voms_obj
+  * [84d2e4a] Update testing requirements
+
+  [ Enol Fernandez ]
+  * Update documentation and tests to Mitaka (9.0.0)
+
+ -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Thu, 21 Jul 2016 14:19:41 +0200
+
 python-keystone-voms (8.0.2-2) stable; urgency=medium
 
   * [cbc16ad] fix dependencies
