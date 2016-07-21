@@ -1,3 +1,14 @@
+python-keystone-voms (8.0.3-1) stable; urgency=medium
+
+  * [a6d9b7f] add keystone VOMS base exception
+  * [779005a] Refactor VOMS support with pyOpenSSL (Closes: #32)
+  * [25b0200] Use the new VOMS class and drop old voms_helper module
+  * [533b347] Defer JSON loading until it is needed
+  * [4de4ad1] remove unused attribute voms_obj
+  * [ef648fa] Update testing requirements
+
+ -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Thu, 21 Jul 2016 14:10:01 +0200
+
 python-keystone-voms (8.0.2-2) stable; urgency=medium
 
   * [cbc16ad] fix dependencies
