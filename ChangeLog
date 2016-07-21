@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+8.0.3
+-----
+
+* Update testing requirements
+* remove unused attribute voms_obj
+* Defer JSON loading until it is needed
+* Use the new VOMS class and drop old voms_helper module
+* Refactor VOMS support with pyOpenSSL
+* add keystone VOMS base exception
+* update gitignore
+* docs: fix building of documentation
+* doc: fix link syntax
+
 8.0.2
 -----
 

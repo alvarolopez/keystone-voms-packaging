@@ -1,5 +1,5 @@
 Metadata-Version: 1.1
-Name: keystone_voms
+Name: keystone-voms
 Version: 8.0.3
 Summary: Keystone VOMS module for Keystone.
 Home-page: http://ifca.github.io/keystone-voms
