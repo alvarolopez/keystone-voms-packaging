@@ -1,7 +1,7 @@
 %global srcname keystone-voms
 
 Name:           python-%{srcname}
-Version:        8.0.2
+Version:        8.0.3
 Release:        1%{?dist}
 Summary:        Keystone VOMS module for Keystone
 
@@ -18,7 +18,8 @@ BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 
 Requires:       openstack-keystone >= 8.0.0
-Requires:       m2crypto
+Requires:       pyOpenSSL >= 0.15
+Requires:       python-cffi
 Requires:       python-oslo-config >= 2.3.0
 Requires:       python-oslo-log >= 1.8.0
 Requires:       python-oslo-serialization >= 1.4.0
@@ -44,6 +45,8 @@ This package contains the VOMS external authentication module.
 %{python2_sitelib}/*
 
 %changelog
+* Fri Jul 22 2016 Alvaro Lopez <aloga@ifca.unican.es> 8.0.3
+- Update to Keystone-VOMS 8.0.3
 * Thu Mar 10 2016 Alvaro Lopez <aloga@ifca.unican.es> 8.0.2
 - Update to Keystone-VOMS 8.0.2
 * Tue Mar 08 2016 Enol Fernandez <enol.fernandez@egi.eu> 8.0.0
