@@ -1,3 +1,10 @@
+python-keystone-voms (8.0.4-1) stable; urgency=medium
+
+  * [1100892] do not fail with 500 if there is SSL data
+  * [d667fbe] Get SSL chain in the right order
+
+ -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Fri, 22 Jul 2016 14:09:19 +0200
+
 python-keystone-voms (8.0.3-1) stable; urgency=medium
 
   * [a6d9b7f] add keystone VOMS base exception
