@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+8.0.4
+-----
+
+* Get SSL chain in the right order
+* do not fail with 500 if there is SSL data
+* update requiremets for documentation
+* update documentation
+
 8.0.3
 -----
 
