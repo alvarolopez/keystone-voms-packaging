@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+9.0.1
+-----
+
+* Get SSL chain in the right order
+* do not fail with 500 if there is SSL data
+* update requiremets for documentation
+* update documentation
+
 9.0.0
 -----
 

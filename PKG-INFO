@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: keystone_voms
-Version: 9.0.0
+Version: 9.0.1
 Summary: Keystone VOMS module for Keystone.
 Home-page: http://ifca.github.io/keystone-voms
 Author: Spanish National Research Council (CSIC)
