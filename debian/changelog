@@ -1,4 +1,4 @@
-python-keystone-voms (9.0.0-1) stable; urgency=medium
+python-keystone-voms (9.0.0-1ubuntu1) trusty; urgency=medium
 
   [ Alvaro Lopez Garcia ]
   * docs improvements
@@ -14,20 +14,20 @@ python-keystone-voms (9.0.0-1) stable; urgency=medium
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Thu, 21 Jul 2016 14:19:41 +0200
 
-python-keystone-voms (8.0.2-2) stable; urgency=medium
+python-keystone-voms (8.0.2-2ubuntu1) trusty; urgency=medium
 
   * [cbc16ad] fix dependencies
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Tue, 12 Apr 2016 12:40:34 +0200
 
-python-keystone-voms (8.0.2-1) stable; urgency=medium
+python-keystone-voms (8.0.2-1ubuntu1) trusty; urgency=medium
 
   [ Enol Fernandez ]
   * [f873f0d] Add CentOS documentation.
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Thu, 10 Mar 2016 12:11:32 +0100
 
-python-keystone-voms (8.0.1-1) stable; urgency=medium
+python-keystone-voms (8.0.1-1ubuntu1) trusty; urgency=medium
 
   [ Alvaro Lopez Garcia ]
   * [b22eeb5] pep8: fix H307, import errors
@@ -56,38 +56,38 @@ python-keystone-voms (8.0.1-1) stable; urgency=medium
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Thu, 10 Mar 2016 11:49:00 +0100
 
-python-keystone-voms (8.0.0-1) stable; urgency=medium
+python-keystone-voms (8.0.0-1ubuntu1) trusty; urgency=medium
 
   [ Enol Fernandez ]
   * [8ca947e] Filter out multiple tenants when using a VOMS proxy
 
   [ Alvaro Lopez Garcia ]
-  * [57259e4] travis: use stable/liberty for testing
+  * [57259e4] travis: use trusty/liberty for testing
   * [71350f4] doc: general improvements
   * [f56e570] doc: homogenize apt-get and aptitude usage
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Tue, 05 Jan 2016 12:31:48 +0100
 
-python-keystone-voms (2015.1-1) stable; urgency=medium
+python-keystone-voms (2015.1-1) trusty; urgency=medium
 
   [ Enol Fernandez ]
-  * [71c22b3] Support for Keystone stable/kilo.
-  * [b000f61] Use stable/kilo for testing in Travis.
+  * [71c22b3] Support for Keystone trusty/kilo.
+  * [b000f61] Use trusty/kilo for testing in Travis.
   * [c672c66] Update documentation for Kilo.
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Wed, 08 Jul 2015 23:22:56 +0200
 
-python-keystone-voms (2014.2-1) stable; urgency=medium
+python-keystone-voms (2014.2-1) trusty; urgency=medium
 
   [ Enol Fernandez ]
-  * [d46fa83] Update code for stable/juno.
+  * [d46fa83] Update code for trusty/juno.
 
   [ Alvaro Lopez Garcia ]
   * [3d012f7] Update documentation to Juno
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Mon, 16 Feb 2015 14:00:14 +0100
 
-python-keystone-voms (2014.1.4-1) stable; urgency=medium
+python-keystone-voms (2014.1.4-1) trusty; urgency=medium
 
   * [ea180c6] code reorganization
   * [9c720ee] Set version dinamically
@@ -98,15 +98,15 @@ python-keystone-voms (2014.1.4-1) stable; urgency=medium
 
  -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Mon, 09 Feb 2015 16:48:49 +0100
 
-python-keystone-voms (2014.1.3-1) stable; urgency=medium
+python-keystone-voms (2014.1.3-1) trusty; urgency=medium
 
   [ Alvaro Lopez Garcia ]
   * [c8bf837] Move to pbr
   * [397bc38] Added debian packaging stuff
-  * [fea2e03] Update tests in stable/havana
+  * [fea2e03] Update tests in trusty/havana
   * [1034ba9] Style and minor sintax changes
   * [bd3868a] Add build information for http://travis-ci.org
-  * [a984025] Changed build status to show stable/havana branch
+  * [a984025] Changed build status to show trusty/havana branch
 
   [ Ilja Livenson ]
   * [63f1057] Fixed tests file to adher to havana internal api #11
