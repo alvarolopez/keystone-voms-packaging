@@ -16,7 +16,7 @@
 VOMS module Installation
 ========================
 
-This module assumes that you are running the Keystone 9 (Mitaka) version.
+This module assumes that you are running the Keystone 8 (Liberty) version.
 
 Install the Keystone VOMS module
 --------------------------------
@@ -29,13 +29,12 @@ AppDB. If you plan to install it like this, remove any prior version installed
 via pip and check that you are removing the old versions. If you did not
 install this module using pip, just ignore this step::
 
-    $ pip uninstall python-keystone-voms keystone-voms
+    # pip uninstall python-keystone-voms keystone-voms
 
 Please, do not use the OpenSuse build service anymore and switch to the EGI
 AppDB repositories. Please visit the `Keystone-VOMS product page
 <https://appdb.egi.eu/store/software/keystone.voms>`_ where you can find the
 download page for all the available and supported versions.
-
 
 Install from pip
 ~~~~~~~~~~~~~~~~
@@ -43,7 +42,7 @@ Install from pip
 With a running Keystone you can install the VOMS module with the
 following command (note the version range)::
 
-    $ pip install 'keystone-voms>=9.0.0,<10.0.0'
+    # pip install 'keystone-voms>=8.0.0,<9.0.0'
 
 Install from source
 ~~~~~~~~~~~~~~~~~~~
@@ -51,22 +50,23 @@ Install from source
 First, uninstall any old ``python-keystone-voms`` installation. This was the
 old name of the package and should be removed::
 
-    $ pip uninstall python-keystone-voms
+    # pip uninstall python-keystone-voms
 
 With a running Keystone, simply install this egg. In the upper-level
 directory run ``python setup.py install``::
 
-    $ git clone git://github.com/IFCA/keystone-voms.git -b stable/mitaka
-    $ cd keystone-voms
-    $ pip install .
+    # git clone git://github.com/IFCA/keystone-voms.git -b stable/liberty
+    # cd keystone-voms
+    # pip install .
 
 Enable the Keystone VOMS module
 -------------------------------
 
 The authentication module is a WSGI middleware that performs the authentication
 and passes the authenticated user down to keystone. Add the VOMS filter to your
-paste configuration file (``/etc/keystone/keystone-paste.ini`` is the default one)
-First, add the VOMS filter as follows::
+paste configuration file (``/etc/keystone/keystone-paste.ini`` is the default one
+in Ubuntu, ``/usr/share/keystone/keystone-dist-paste.ini`` in CentOS). First,
+add the VOMS filter as follows::
 
     [filter:voms]
     paste.filter_factory = keystone_voms.core:VomsAuthNMiddleware.factory

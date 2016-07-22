@@ -1,7 +1,7 @@
 CHANGES
 =======
 
-9.0.1
+8.0.4
 -----
 
 * Get SSL chain in the right order
@@ -9,7 +9,7 @@ CHANGES
 * update requiremets for documentation
 * update documentation
 
-9.0.0
+8.0.3
 -----
 
 * Update testing requirements
@@ -19,9 +19,6 @@ CHANGES
 * Refactor VOMS support with pyOpenSSL
 * add keystone VOMS base exception
 * update gitignore
-* Update tests for Mitaka
-* Fix formatting errors
-* Update documentation to Mitaka (9.0.0)
 * docs: fix building of documentation
 * doc: fix link syntax
 

@@ -22,7 +22,7 @@ an HTTP server (Apache will be used in this documentation, but any webserver
 could make it). Keystone project has deprecated eventlet, so you should be already
 running Keystone in such way.
 
-* Keystone Mitaka.
+* Keystone Liberty.
 * EUgridPMA CA certificates at the latest version.
 * fetch-crl package.
 * VOMS libraries.
@@ -40,20 +40,20 @@ Ubuntu 14.04
 
 Use these commands to install on Ubuntu::
 
-    $ wget -q -O - https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 | apt-key add -
-    $ echo "deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core" \
+    # wget -q -O - https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 | apt-key add -
+    # echo "deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core" \
       | tee --append /etc/apt/sources.list.d/egi-cas.list
-    $ apt-get update
-    $ apt-get install ca-policy-egi-core fetch-crl
-    $ fetch-crl
+    # apt-get update
+    # apt-get install ca-policy-egi-core fetch-crl
+    # fetch-crl
 
 CentOS 7
 ^^^^^^^^
 
 Install CAs and fetch-crl with::
 
-    $ curl -L http://repository.egi.eu/sw/production/cas/1/current/repo-files/EGI-trustanchors.repo | sudo tee /etc/yum.repos.d/EGI-trustanchors.repo
-    $ sudo yum install ca-policy-egi-core fetch-crl
+    curl -L http://repository.egi.eu/sw/production/cas/1/current/repo-files/EGI-trustanchors.repo | sudo tee /etc/yum.repos.d/EGI-trustanchors.repo
+    sudo yum install ca-policy-egi-core fetch-crl
 
 VOMS libraries
 ~~~~~~~~~~~~~~
@@ -61,10 +61,10 @@ VOMS libraries
 You must install the VOMS libraries. Please install the ``libvomsapi1`` package in Debian/Ubuntu or
 ``voms`` package in RedHat/Fedora/ScientificLinux/etc::
 
-    $ apt-get install libvomsapi1
+    # apt-get install libvomsapi1
 
 Apache Installation and Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 .. note::
     Since Kilo, the keystone project deprecates Eventlet in favor of a WSGI
@@ -82,8 +82,7 @@ Ubuntu::
     $ a2enmod ssl
 
 CentOS::
-
-    $ yum install mod_ssl
+    # yum install mod_ssl
 
 Then add to your Apache Keystone WSGI configuration the SSL options as shown below.
 We assume that you have the CA certificates installed in the default location,
@@ -148,13 +147,10 @@ accepted by OpenSSL. This is an important thing, so please double check that
 you have really enabled it.
 
 Ubuntu::
-
-    $ echo "export OPENSSL_ALLOW_PROXY_CERTS=1" >> /etc/apache2/envvars
+    # echo "export OPENSSL_ALLOW_PROXY_CERTS=1" >> /etc/apache2/envvars
 
 CentOS::
-
-    $ echo "OPENSSL_ALLOW_PROXY_CERTS=1" >> /etc/sysconfig/httpd
-
+    # echo "OPENSSL_ALLOW_PROXY_CERTS=1" >> /etc/sysconfig/httpd
 
 With the above configuration, and assuming that the Keystone host is
 ``keystone.example.org`` the endpoints will be as follow:

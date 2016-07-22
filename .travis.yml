@@ -15,7 +15,7 @@ install:
     - pip install tox
     - pip install -r requirements.txt
     - pip install -r test-requirements.txt
-    - pip install -e git+https://github.com/openstack/keystone@stable/mitaka#egg=keystone
+    - pip install -e git+https://github.com/openstack/keystone@stable/liberty#egg=keystone
 
 script:
     - tox
