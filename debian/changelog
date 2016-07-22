@@ -1,3 +1,11 @@
+python-keystone-voms (9.0.1-1) stable; urgency=medium
+
+  * update documentation
+  * [6baa48c] do not fail with 500 if there is SSL data
+  * [ff3ac81] Get SSL chain in the right order
+
+ -- Alvaro Lopez Garcia <aloga@ifca.unican.es>  Fri, 22 Jul 2016 14:07:32 +0200
+
 python-keystone-voms (9.0.0-1) stable; urgency=medium
 
   [ Alvaro Lopez Garcia ]
