@@ -1,7 +1,7 @@
 %global srcname keystone-voms
 
 Name:           python-%{srcname}
-Version:        9.0.0
+Version:        9.0.1
 Release:        1%{?dist}
 Summary:        Keystone VOMS module for Keystone
 
@@ -45,7 +45,9 @@ This package contains the VOMS external authentication module.
 %{python2_sitelib}/*
 
 %changelog
-* Fri Jul 22 2016 Alvaro Lopez <aloga@ifca.unican.es> 8.0.0
+* Fri Jul 22 2016 Alvaro Lopez <aloga@ifca.unican.es> 9.0.1
+- Update to Keystone-VOMS 9.0.1
+* Fri Jul 22 2016 Alvaro Lopez <aloga@ifca.unican.es> 9.0.0
 - Update to Keystone-VOMS 9.0.0
 * Fri Jul 22 2016 Alvaro Lopez <aloga@ifca.unican.es> 8.0.3
 - Update to Keystone-VOMS 8.0.3
